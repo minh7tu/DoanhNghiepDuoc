@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32901.82
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CongKhaiYTe.Core", "CongKhaiYTe.Core\CongKhaiYTe.Core.csproj", "{B6997467-EC84-4661-8D8B-5C17394BD29E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CongKhaiYTe.WinForm", "CongKhaiYTe.WinForm\CongKhaiYTe.WinForm.csproj", "{B48AEB55-D959-4C55-9DA4-628C20AFBC57}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B6997467-EC84-4661-8D8B-5C17394BD29E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6997467-EC84-4661-8D8B-5C17394BD29E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6997467-EC84-4661-8D8B-5C17394BD29E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6997467-EC84-4661-8D8B-5C17394BD29E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B48AEB55-D959-4C55-9DA4-628C20AFBC57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B48AEB55-D959-4C55-9DA4-628C20AFBC57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B48AEB55-D959-4C55-9DA4-628C20AFBC57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B48AEB55-D959-4C55-9DA4-628C20AFBC57}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3BFCB745-74F4-4AAC-ABAA-474F249F3F80}
+	EndGlobalSection
+EndGlobal
