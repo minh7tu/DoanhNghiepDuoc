@@ -23,14 +23,16 @@ namespace CongKhaiYTe.Core.DAO
         {
             _context.OpenMySql();
 
-            string sql = "insert ignore into infor_company(id,company_name,register_product_name,ad_confirm_number) values(@id,@company_name,@register_product_name,@ad_confirm_number)";
+            string sql = "insert ignore into infor_company(id,company_name,register_product_name,ad_confirm_number,tax_code,link) values(@id,@company_name,@register_product_name,@ad_confirm_number,@tax_code,@link)";
           
             MySqlCommand cmd = new MySqlCommand(sql, _context._connect);
 
             cmd.Parameters.AddWithValue("@id", dto.Id);
             cmd.Parameters.AddWithValue("@company_name", dto.CompanyName);
             cmd.Parameters.AddWithValue("@register_product_name", dto.RegisterProductName);
+            cmd.Parameters.AddWithValue("@tax_code", dto.TaxCode);
             cmd.Parameters.AddWithValue("@ad_confirm_number", dto.AdComfirmNumber);
+            cmd.Parameters.AddWithValue("@link", dto.Link);
 
             cmd.ExecuteNonQuery();
 
@@ -53,10 +55,8 @@ namespace CongKhaiYTe.Core.DAO
             while(data.Read())
             {
                 CompanyDTO dto = new CompanyDTO();
-                dto.Id = (int)data["id"];
-                dto.CompanyName = data["company_name"].ToString();
-                dto.RegisterProductName = data["register_product_name"].ToString();
-                dto.AdComfirmNumber = data["ad_confirm_number"].ToString();
+                
+                dto.CompanyName = data["link"].ToString();
 
                 listAll.Add(dto);
             }

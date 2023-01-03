@@ -10,7 +10,9 @@ namespace CongKhaiYTe.Core.DTO
     {
         public int Id { get; set; }
         public string CompanyName { get; set; }      
+        public string TaxCode { get; set; }
         public string RegisterProductName { get; set; }
         public string AdComfirmNumber { get; set; }
+        public string Link { get; set; }
     }
 }

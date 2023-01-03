@@ -31,6 +31,8 @@ namespace CongKhaiYTe.WinForm
         {
             this.btnCrawler = new System.Windows.Forms.Button();
             this.pnlChorme = new System.Windows.Forms.Panel();
+            this.pnl2 = new System.Windows.Forms.Panel();
+            this.btnTaxCode = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnCrawler
@@ -47,14 +49,33 @@ namespace CongKhaiYTe.WinForm
             // 
             this.pnlChorme.Location = new System.Drawing.Point(13, 59);
             this.pnlChorme.Name = "pnlChorme";
-            this.pnlChorme.Size = new System.Drawing.Size(1112, 482);
+            this.pnlChorme.Size = new System.Drawing.Size(764, 557);
             this.pnlChorme.TabIndex = 2;
+            // 
+            // pnl2
+            // 
+            this.pnl2.Location = new System.Drawing.Point(821, 59);
+            this.pnl2.Name = "pnl2";
+            this.pnl2.Size = new System.Drawing.Size(416, 447);
+            this.pnl2.TabIndex = 3;
+            // 
+            // btnTaxCode
+            // 
+            this.btnTaxCode.Location = new System.Drawing.Point(131, 11);
+            this.btnTaxCode.Name = "btnTaxCode";
+            this.btnTaxCode.Size = new System.Drawing.Size(75, 23);
+            this.btnTaxCode.TabIndex = 4;
+            this.btnTaxCode.Text = "Lấy mã số thuế";
+            this.btnTaxCode.UseVisualStyleBackColor = true;
+            
             // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1155, 571);
+            this.ClientSize = new System.Drawing.Size(1325, 628);
+            this.Controls.Add(this.btnTaxCode);
+            this.Controls.Add(this.pnl2);
             this.Controls.Add(this.pnlChorme);
             this.Controls.Add(this.btnCrawler);
             this.Name = "Main";
@@ -67,5 +88,7 @@ namespace CongKhaiYTe.WinForm
 
         private System.Windows.Forms.Button btnCrawler;
         private System.Windows.Forms.Panel pnlChorme;
+        private System.Windows.Forms.Panel pnl2;
+        private System.Windows.Forms.Button btnTaxCode;
     }
 }
