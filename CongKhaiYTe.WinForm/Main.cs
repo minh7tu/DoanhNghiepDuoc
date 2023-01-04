@@ -28,7 +28,7 @@ namespace CongKhaiYTe.WinForm
         public string url1 = @"https://congkhaiyte.moh.gov.vn/?&module=Content.Form&moduleId=22009&backdrop=static&itemId=5fb66666a63e2138a955eef8&=&service=Project.MedicalPrice.Home.MedicalPrice.AdsConfirmation.select&modalClass=modal-lg&gridModuleParentId=9&layout=Project.MedicalPrice.Home.MedicalPrice.AdsConfirmation.detail&site=2001869";
         public ChromiumWebBrowser _browser;
         public ChromiumWebBrowser _browser1;
-        public static List<string> _lisLink = new List<string>();
+        public static List<CompanyDTO> _lisLink = new List<CompanyDTO>();
 
 
         public Main()
@@ -55,11 +55,8 @@ namespace CongKhaiYTe.WinForm
             
 
             //////c2
-            HtmlAgilityPack.HtmlDocument htmlDocument = new HtmlAgilityPack.HtmlDocument();
-            
-
-           
-
+            HtmlAgilityPack.HtmlDocument htmlDocument = new HtmlAgilityPack.HtmlDocument();            
+          
             while (true)
             {
                 
@@ -95,7 +92,7 @@ namespace CongKhaiYTe.WinForm
                     };
 
                     htmlDocument = htmlWeb.Load(dto.Link);
-                    Thread.Sleep(6000);
+                    //Thread.Sleep(6000);
 
                     dto.TaxCode = htmlDocument.DocumentNode.SelectSingleNode("//div[@class='box-medicine-detail']/div[3]/div[@class='bx-deaitl-val']").InnerText;
 
@@ -114,5 +111,7 @@ namespace CongKhaiYTe.WinForm
         }
 
         
+
+     
     }      
 }

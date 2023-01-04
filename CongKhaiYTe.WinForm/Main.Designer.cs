@@ -67,7 +67,7 @@ namespace CongKhaiYTe.WinForm
             this.btnTaxCode.TabIndex = 4;
             this.btnTaxCode.Text = "Lấy mã số thuế";
             this.btnTaxCode.UseVisualStyleBackColor = true;
-            
+           
             // 
             // Main
             // 

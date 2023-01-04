@@ -26,5 +26,10 @@ namespace CongKhaiYTe.Core.BUS
         {
             return _dao.GetAll();
         }
+
+        public void Update(string link,string taxCode)
+        {
+            _dao.Update(link, taxCode);
+        }
     }
 }

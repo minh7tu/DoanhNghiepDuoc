@@ -46,7 +46,7 @@ namespace CongKhaiYTe.Core.DAO
 
             List<CompanyDTO> listAll = new List<CompanyDTO>();
 
-            string sql = "select * from infor_company";
+            string sql = "select link from infor_company";
 
             MySqlCommand cmd = new MySqlCommand(sql, _context._connect);
 
@@ -56,7 +56,7 @@ namespace CongKhaiYTe.Core.DAO
             {
                 CompanyDTO dto = new CompanyDTO();
                 
-                dto.CompanyName = data["link"].ToString();
+                dto.Link = data["link"].ToString();
 
                 listAll.Add(dto);
             }
@@ -64,6 +64,17 @@ namespace CongKhaiYTe.Core.DAO
             _context.Dispose();
 
             return listAll;
+        }
+
+        public void Update(string link,string taxCode)
+        {
+            _context.OpenMySql();
+
+            string str = "update infor_company set tax_code ='" + taxCode + "'" + "where link='" + link + "'";
+
+            MySqlCommand cmd = new MySqlCommand(str, _context._connect);
+
+            cmd.ExecuteNonQuery();
         }
     }
 }
